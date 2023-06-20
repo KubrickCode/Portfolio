@@ -2,7 +2,7 @@ const Profile = () => {
   return (
     <>
       <div className="flex flex-row justify-center items-center">
-        <img src="profile.jpg" className="w-60 rounded-xl" />
+        <img src="profile.jpg" className="w-72 rounded-xl" />
         <ul className="ml-10">
           {profileList.map((item) => (
             <li key={item.id} className="my-10">
@@ -11,15 +11,6 @@ const Profile = () => {
           ))}
         </ul>
       </div>
-      <ol className="text-center mt-5">
-        <li className="my-2">
-          새로운 기술을 받아들이는 것에 두려움이 없는 백엔드 개발자입니다.
-        </li>
-        <li className="my-2">공부 이상으로 코딩이 너무 즐거운 개발자입니다.</li>
-        <li className="my-2">
-          기술적인 부분 외에도 아키텍처에 관심이 많습니다.
-        </li>
-      </ol>
     </>
   );
 };
@@ -47,6 +38,11 @@ const profileList = [
   },
   {
     id: 4,
+    title: "직무",
+    description: "백엔드 개발자",
+  },
+  {
+    id: 5,
     title: "깃허브",
     description: (
       <a
