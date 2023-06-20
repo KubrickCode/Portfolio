@@ -26,7 +26,6 @@ const Header = () => {
 
 const tabList = [
   { id: 0, name: "프로필", pathname: "/" },
-  { id: 1, name: "소개", pathname: "/about" },
   { id: 2, name: "기술", pathname: "/skills" },
   { id: 3, name: "프로젝트", pathname: "/projects" },
 ];
