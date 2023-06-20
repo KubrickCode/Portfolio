@@ -1,9 +1,14 @@
-import Tabs from "./Tabs/Tabs";
+import Layout from "./Layout/Layout";
+import Router from "./Router";
 
 const App = () => {
   return (
     <>
-      <Tabs />
+      <Layout>
+        <div className="py-10 px-40">
+          <Router />
+        </div>
+      </Layout>
     </>
   );
 };
