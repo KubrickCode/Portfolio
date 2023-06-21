@@ -1,9 +1,9 @@
 import { useState } from "react";
-import DevProfiler from "./DevProfiler";
-import Kctodo from "./Kctodo";
-import Sinabro from "./Sinabro";
-import Folioverse from "./Folioverse";
-import Kcvoca from "./Kcvoca";
+import DevProfiler from "./DevProfiler/DevProfiler";
+import Pointodo from "./Pointodo/Pointodo";
+import Sinabro from "./Sinabro/Sinabro";
+import Folioverse from "./Folioverse/Folioverse";
+import Kcvoca from "./Kcvoca/Kcvoca";
 
 const Projects = () => {
   const [open, setOpen] = useState(Array(5).fill(false));
@@ -50,9 +50,9 @@ const Projects = () => {
 const projectsList = [
   {
     id: 0,
-    provider: "개인",
-    description: "KC-TODO(투두 리스트 웹사이트) - 2023/06/21 ~ 현재 진행중",
-    component: <Kctodo />,
+    provider: "개인★",
+    description: "POINTODO(투두 리스트 웹사이트) - 2023/06/21 ~ 현재 진행중",
+    component: <Pointodo />,
   },
   {
     id: 1,
