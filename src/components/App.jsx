@@ -5,7 +5,7 @@ const App = () => {
   return (
     <>
       <Layout>
-        <div className="py-10 px-40">
+        <div className="py-10 px-5">
           <Router />
         </div>
       </Layout>

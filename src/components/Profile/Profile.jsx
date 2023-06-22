@@ -1,17 +1,26 @@
 const Profile = () => {
   return (
-    <>
-      <div className="flex flex-row justify-center items-center">
-        <img src="profile.jpg" className="w-72 rounded-xl" />
-        <ul className="ml-10">
+    <div className="flex flex-row justify-center">
+      <div className="flex flex-row items-center border w-fit rounded-lg p-5">
+        <ul>
+          <li className="flex flex-row">
+            <div>
+              <img src="profile.jpg" className="w-20 rounded-xl" />
+            </div>
+            <div className="grid content-center ml-2">
+              <div className="my-2">이름 : 이승현</div>
+              <div className="my-2">생년월일 : 1994/09/16</div>
+              <div className="my-2">직무 : 백엔드 개발자</div>
+            </div>
+          </li>
           {profileList.map((item) => (
-            <li key={item.id} className="my-10">
+            <li key={item.id} className="mt-10">
               {item.title} : {item.description}
             </li>
           ))}
         </ul>
       </div>
-      <ul className="mx-60 mt-10 border p-5 rounded-lg">
+      <ul className="ml-5 border p-5 rounded-lg">
         {aboutList.map((item) => (
           <li key={item.id} className="my-5">
             <h2 className="my-2 text-lg">{item.title}</h2>
@@ -20,38 +29,23 @@ const Profile = () => {
           </li>
         ))}
       </ul>
-    </>
+    </div>
   );
 };
 
 const profileList = [
   {
     id: 0,
-    title: "이름",
-    description: "이승현",
-  },
-  {
-    id: 1,
-    title: "생년월일",
-    description: "1994/09/16",
-  },
-  {
-    id: 2,
     title: "이메일",
     description: "kubrickcode@gmail.com",
   },
   {
-    id: 3,
+    id: 1,
     title: "연락처",
     description: "010-9409-7145",
   },
   {
-    id: 4,
-    title: "직무",
-    description: "백엔드 개발자",
-  },
-  {
-    id: 5,
+    id: 2,
     title: "깃허브",
     description: (
       <a

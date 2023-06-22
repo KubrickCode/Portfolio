@@ -41,7 +41,7 @@ const links = [
     id: 0,
     description: (
       <a
-        href="https://github.com/KubrickCode/Folioverse"
+        href="https://github.com/KubrickCode/DevProfiler"
         target="_blank"
         rel="noreferrer"
         className="text-blue-500"
@@ -54,12 +54,12 @@ const links = [
     id: 1,
     description: (
       <a
-        href="https://folioverse.duckdns.org/"
+        href="https://devprofiler.duckdns.org/"
         target="_blank"
         rel="noreferrer"
         className="text-blue-500"
       >
-        배포 링크(폐쇄)
+        배포 링크
       </a>
     ),
   },
