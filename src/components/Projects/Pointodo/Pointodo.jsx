@@ -21,7 +21,7 @@ const Pointodo = () => {
 const about = [
   { id: 0, description: "세 번째 개인 프로젝트" },
   { id: 1, description: "투두 리스트 웹사이트" },
-  { id: 1, description: "할 일 정리 및 포인트 시스템" },
+  { id: 2, description: "할 일 정리 및 포인트 시스템" },
 ];
 
 const goals = [
@@ -86,22 +86,22 @@ const articleList = [
     description: <ProjectListItems list={about} />,
   },
   {
-    id: 0,
+    id: 1,
     title: "목표",
     description: <ProjectListItems list={goals} />,
   },
   {
-    id: 0,
-    title: "주요 기능",
+    id: 2,
+    title: "기술 스택",
     description: <ProjectListItems list={skills} />,
   },
   {
-    id: 0,
-    title: "기술 스택",
+    id: 3,
+    title: "주요 기능",
     description: <ProjectListItems list={features} />,
   },
   {
-    id: 0,
+    id: 4,
     title: "회고",
     description: <PointodoReport />,
   },

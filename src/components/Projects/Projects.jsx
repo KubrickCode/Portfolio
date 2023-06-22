@@ -35,7 +35,7 @@ const Projects = () => {
             </div>
             <div
               className={`overflow-hidden transition-all duration-500 ease-in-out ${
-                open[index] ? "max-h-[2000px]" : "max-h-0"
+                open[index] ? "max-h-[5000px]" : "max-h-0"
               }`}
             >
               {item.component}
