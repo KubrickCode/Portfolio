@@ -9,7 +9,7 @@ const Header = () => {
           <li key={item.id}>
             <Link
               to={item.pathname}
-              className={`px-10 py-5 inline-block border-b-2 rounded-t-lg w-full ${
+              className={`px-5 lg:px-10 py-5 inline-block border-b-2 rounded-t-lg w-full ${
                 location.pathname === item.pathname
                   ? "text-blue-600 border-blue-600"
                   : "border-transparent hover:text-gray-600 hover:border-gray-300"
