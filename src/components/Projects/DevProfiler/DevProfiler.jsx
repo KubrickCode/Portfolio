@@ -63,6 +63,19 @@ const links = [
       </a>
     ),
   },
+  {
+    id: 2,
+    description: (
+      <a
+        href="https://devprofiler.duckdns.org/api/docs"
+        target="_blank"
+        rel="noreferrer"
+        className="text-blue-500"
+      >
+        API 문서
+      </a>
+    ),
+  },
 ];
 
 const goals = [
