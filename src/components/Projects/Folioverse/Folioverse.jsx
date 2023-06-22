@@ -27,7 +27,7 @@ const about = [
       "개인별로 간단한 포트폴리오를 제작할 수 있고, 다른 유저들과 공유 및 상호 소통 가능",
   },
   {
-    id: 4,
+    id: 3,
     description: <video src="2팀_Folioverse 시연 영상.mp4" controls />,
   },
 ];

@@ -27,7 +27,7 @@ const about = [
       "포인트와 컬렉션과 같은 재미요소를 이용하여 사용자의 웹 방문율을 높인 뒤 경각심을 심어 멸종 위기종에 대한 관심도를 높이려고 함",
   },
   {
-    id: 4,
+    id: 3,
     description: <video src="2차팀플.mp4" controls />,
   },
 ];
@@ -60,7 +60,7 @@ const links = [
     ),
   },
   {
-    id: 1,
+    id: 2,
     description: (
       <a
         href="http://kdt-ai7-team01.elicecoding.com/api/docs"

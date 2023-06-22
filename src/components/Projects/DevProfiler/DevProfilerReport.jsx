@@ -3,9 +3,9 @@ const DevProfilerReport = () => {
     <>
       <div>
         {reportList.map((item) => (
-          <p key={item.id} className="my-4">
+          <div key={item.id} className="my-4">
             {item.description}
-          </p>
+          </div>
         ))}
       </div>
     </>
