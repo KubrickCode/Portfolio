@@ -25,13 +25,13 @@ const skillsList = [
     id: 1,
     title: "TypeScript",
     description:
-      "타입스크립트를 사용하여, 기존 자바스크립트의 TypeLess한 단점들을 보완하고, 좀 더 객체지향적으로 코드를 짤 수 있습니다.",
+      "타입스크립트를 사용하여, 기존 자바스크립트의 단점들을 보완하고, 좀 더 객체지향적으로 코드를 짤 수 있습니다.",
   },
   {
     id: 2,
-    title: "PostgreSQL / MySQL / MongoDB / Prisma",
+    title: "PostgreSQL / MySQL / Prisma",
     description:
-      "각종 관계형/비관계형 DB를 통해 데이터베이스를 구축하고 백엔드 서버와 연동이 가능하며, 쿼리문 혹은 Prisma와 같은 ORM을 다룰 수 있습니다.",
+      "RDBMS를 통해 데이터베이스를 구축하고 백엔드 서버와 연동이 가능하며, 쿼리문 혹은 Prisma와 같은 ORM을 다룰 수 있습니다.",
   },
   {
     id: 3,
@@ -49,7 +49,7 @@ const skillsList = [
     id: 5,
     title: "AWS",
     description:
-      "AWS의 서비스등을 이용하여 클라우드 서버 혹은 데이터베이스 등을 대여하여 서비스를 배포할 수 있습니다.",
+      "AWS의 서비스들을 이용하여 클라우드 서버 혹은 데이터베이스 등을 대여하여 서비스를 배포할 수 있습니다.",
   },
   {
     id: 5,
@@ -60,13 +60,14 @@ const skillsList = [
   {
     id: 5,
     title: "CI/CD",
-    description: "깃허브 액션 등을 통하여 서비스 배포를 자동화 할 수 있습니다.",
+    description:
+      "깃허브 액션과 AWS의 Code Deploy 등을 통하여 서비스 배포를 자동화 할 수 있습니다.",
   },
   {
     id: 5,
     title: "프론트엔드 기술",
     description:
-      "리액트 등을 이용하여 클라이언트 UI를 구성할 수 있으며, Tailwind 혹은 MUI같은 CSS 프레임워크, Zustand와 같은 상태관리 라이브러리, React-Query와 같은 서버 비동기 통신 용 라이브러리 등을 사용할 수 있습니다.",
+      "리액트 등을 이용하여 클라이언트 UI를 구성할 수 있으며, Tailwind 혹은 MUI같은 CSS 프레임워크, Zustand와 같은 상태관리 라이브러리, React-Query와 같은 서버 비동기 통신용 라이브러리 등을 사용할 수 있습니다.",
   },
 ];
 
