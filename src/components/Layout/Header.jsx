@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 const Header = () => {
   const location = useLocation();
   return (
-    <div className="flex justify-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700">
+    <div className="flex justify-center text-sm md:text-lg text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700">
       <ul className="flex flex-row">
         {tabList.map((item) => (
           <li key={item.id}>

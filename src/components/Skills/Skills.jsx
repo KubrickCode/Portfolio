@@ -52,19 +52,19 @@ const skillsList = [
       "AWS의 서비스들을 이용하여 클라우드 서버 혹은 데이터베이스 등을 대여하여 서비스를 배포할 수 있습니다.",
   },
   {
-    id: 5,
+    id: 6,
     title: "Docker",
     description:
       "도커의 컨테이너를 통해 다양한 환경 혹은 프로덕션 환경 에서도 일관성 있는 개발/배포 환경을 구축할 수 있습니다.",
   },
   {
-    id: 5,
+    id: 7,
     title: "CI/CD",
     description:
       "깃허브 액션과 AWS의 Code Deploy 등을 통하여 서비스 배포를 자동화 할 수 있습니다.",
   },
   {
-    id: 5,
+    id: 8,
     title: "프론트엔드 기술",
     description:
       "리액트 등을 이용하여 클라이언트 UI를 구성할 수 있으며, Tailwind 혹은 MUI같은 CSS 프레임워크, Zustand와 같은 상태관리 라이브러리, React-Query와 같은 서버 비동기 통신용 라이브러리 등을 사용할 수 있습니다.",

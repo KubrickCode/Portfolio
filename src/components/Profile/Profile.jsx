@@ -1,7 +1,7 @@
 const Profile = () => {
   return (
-    <div className="flex flex-row justify-center">
-      <div className="flex flex-row items-center border w-fit rounded-lg p-5">
+    <div className="lg:flex lg:flex-row justify-center">
+      <div className="flex flex-row justify-center items-center border mb-5 lg:mb-0 lg:w-fit rounded-lg p-5">
         <ul>
           <li className="flex flex-row">
             <div>
@@ -20,7 +20,7 @@ const Profile = () => {
           ))}
         </ul>
       </div>
-      <ul className="ml-5 border p-5 rounded-lg">
+      <ul className="lg:ml-5 border p-5 rounded-lg">
         {aboutList.map((item) => (
           <li key={item.id} className="my-5">
             <h2 className="my-2 text-lg">{item.title}</h2>
