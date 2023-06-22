@@ -12,7 +12,10 @@ const Projects = () => {
     <>
       <ul>
         {projectsList.map((item, index) => (
-          <li key={item.id} className="border my-2 p-5 rounded-lg">
+          <li
+            key={item.id}
+            className="border my-2 p-5 rounded-lg transition-all hover:scale-[1.01]"
+          >
             <div
               className="cursor-pointer flex flex-row justify-between"
               onClick={() => {
