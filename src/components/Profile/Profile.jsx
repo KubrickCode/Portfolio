@@ -7,7 +7,7 @@ const Profile = () => {
             <div>
               <img src="profile.jpg" className="w-20 rounded-xl" />
             </div>
-            <div className="grid content-center ml-2">
+            <div className="grid content-center ml-5">
               <div className="my-2">이름 : 이승현</div>
               <div className="my-2">생년월일 : 1994/09/16</div>
               <div className="my-2">직무 : 백엔드 개발자</div>
@@ -73,7 +73,7 @@ const aboutList = [
     id: 1,
     title: "2. 코딩이 즐겁습니다.",
     description1:
-      "- 코딩을 할 때 단순히 교과서적인 공부라고 생각들지 않고, 할 때마다 정말 즐거운 기분을 느낍니다.",
+      "- 코딩을 할 때 단순히 교과서적인 공부라고 생각들지 않고, 문제를 해결할 때마다 정말 즐거운 기분을 느낍니다.",
     description2:
       "- 수많은 트러블 슈팅을 겪는다 할지라도, 원하는 결과에 도달했을 때 정말 짜릿함을 느끼고, 백엔드 개발을 할 때 유난히 그런 기분을 느낍니다.",
   },
