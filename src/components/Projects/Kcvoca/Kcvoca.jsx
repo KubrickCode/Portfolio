@@ -23,7 +23,7 @@ const about = [
   { id: 1, description: "단어장 웹 사이트" },
   { id: 2, description: "폴더 구조를 통해 단어장을 관리하는 시스템" },
   { id: 3, description: "나만의 단어장을 생성하고, 다양한 방식으로 학습 가능" },
-  { id: 4, description: <video src="kv영상.mp4" autoPlay controls /> },
+  { id: 4, description: <video src="kv영상.mp4" controls /> },
 ];
 
 const links = [
