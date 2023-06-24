@@ -19,7 +19,7 @@ const skillsList = [
     id: 0,
     title: "NodeJS / ExpressJS / NestJS",
     description:
-      "NodeJS의 프레임워크 ExpressJS와 NestJS를 통해 백엔드 서버를 구축할 수 있으며, 계층형 아키텍처, 클린 아키텍처 기반으로 구조 설계가 가능합니다.",
+      "NodeJS의 프레임워크 ExpressJS와 NestJS를 통해 백엔드 서버를 구축할 수 있으며, DIP를 기반으로 한 아키텍처 설계가 가능합니다.",
   },
   {
     id: 1,
