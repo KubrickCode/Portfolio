@@ -33,7 +33,7 @@ const Projects = () => {
                   open[index] && "rotate-180"
                 }`}
               >
-                👇
+                ▼
               </span>
             </div>
             <div

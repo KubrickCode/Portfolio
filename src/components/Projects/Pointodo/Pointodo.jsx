@@ -59,6 +59,10 @@ const goals = [
 const skills = [
   { id: 0, description: "NestJS" },
   { id: 1, description: "React" },
+  { id: 2, description: "AWS EC2" },
+  { id: 3, description: "AWS RDS" },
+  { id: 4, description: "Docker" },
+  { id: 5, description: "Github Action" },
 ];
 
 const features = [

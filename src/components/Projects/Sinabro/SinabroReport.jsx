@@ -77,7 +77,8 @@ const reportList = [
         rel="noreferrer"
         className="text-blue-500"
       >
-        2차 팀 프로젝트 포인트 시스템 DB 삽질기
+        {">"}
+        {">"} 2차 팀 프로젝트 포인트 시스템 DB 삽질기
       </a>
     ),
   },
