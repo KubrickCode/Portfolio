@@ -5,7 +5,7 @@ const Profile = () => {
         <ul>
           <li className="flex flex-row">
             <div>
-              <img src="profile.jpg" className="w-20 rounded-xl" />
+              <img src="증명사진.png" className="w-28 rounded-xl" />
             </div>
             <div className="grid content-center ml-5">
               <div className="my-2">이름 : 이승현</div>
