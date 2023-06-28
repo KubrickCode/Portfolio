@@ -73,6 +73,10 @@ const reportList = [
     description:
       "애초에 팀 프로젝트이기도 하고, 내가 원하는 주제, 원하는 스펙 등을 가지고 기획하지 않았기에 추가적인 업데이트는 하지 않을 예정이다.",
   },
+  {
+    id: 12,
+    description: <img src="/1차 상장.png" />,
+  },
 ];
 
 export default FolioverseReport;

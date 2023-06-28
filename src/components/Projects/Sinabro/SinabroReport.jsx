@@ -97,6 +97,10 @@ const reportList = [
     description:
       "아무튼 교육적으로 계몽적인 상황이 여러 번 있었으며, 너무 좋은 팀원들을 만나게 된 것 이외에도 굉장히 뜻 깊은 프로젝트가 되었다.",
   },
+  {
+    id: 15,
+    description: <img src="/2차 상장.png" />,
+  },
 ];
 
 export default SinabroReport;
