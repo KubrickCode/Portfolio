@@ -19,37 +19,37 @@ const skillsList = [
     id: 0,
     title: "NodeJS / ExpressJS / NestJS",
     description:
-      "NodeJS의 프레임워크 ExpressJS와 NestJS를 통해 백엔드 서버를 구축할 수 있으며, DIP를 기반으로 한 아키텍처 설계가 가능합니다.",
+      "NodeJS의 프레임워크 ExpressJS와 NestJS를 통해 백엔드 서버를 구축할 수 있으며, 클린 아키텍처를 지향합니다.",
   },
   {
     id: 1,
     title: "TypeScript",
     description:
-      "타입스크립트를 사용하여, 기존 자바스크립트의 단점들을 보완하고, 좀 더 객체지향적으로 코드를 짤 수 있습니다.",
+      "타입스크립트를 사용하여, 기존 자바스크립트의 단점들을 보완하고, 이를 통해 좀 더 객체지향적인 코드를 지향합니다.",
   },
   {
     id: 2,
     title: "PostgreSQL / MySQL / Prisma",
     description:
-      "RDBMS를 통해 데이터베이스를 구축하고 백엔드 서버와 연동이 가능하며, 쿼리문 혹은 Prisma와 같은 ORM을 다룰 수 있습니다.",
+      "RDBMS를 통해 데이터베이스를 구축하고 백엔드 서버와 연동이 가능하며, SQL 쿼리문 혹은 Prisma와 같은 ORM을 다룰 수 있습니다.",
   },
   {
     id: 3,
     title: "Jest",
     description:
-      "Jest 라이브러리와 모킹을 통해 단위 테스트, 통합 테스트, E2E 테스트 등을 통해 테스트 주도 개발을 할 수 있습니다.",
+      "Jest 라이브러리와 모킹을 통해 단위 테스트, 통합 테스트, E2E 테스트 등을 통한 TDD를 지향합니다.",
   },
   {
     id: 4,
     title: "Swagger",
     description:
-      "Swagger를 통해 서버 API를 문서화하여 유지보수를 용이하게 하고, 프론트엔드와의 소통에도 힘을 쓸 수 있습니다.",
+      "Swagger를 통해 서버 API를 문서화하여 유지보수를 용이하게 하고, 이를 통해 다른 직군과의 원활한 소통을 지향합니다.",
   },
   {
     id: 5,
     title: "AWS",
     description:
-      "AWS의 서비스들을 이용하여 클라우드 서버 혹은 데이터베이스 등을 대여하여 서비스를 배포할 수 있습니다.",
+      "AWS의 서비스들을 이용하여 클라우드 서버 혹은 데이터베이스 등을 대여하여 서비스를 구축할 수 있습니다.",
   },
   {
     id: 6,
@@ -59,9 +59,9 @@ const skillsList = [
   },
   {
     id: 7,
-    title: "CI/CD",
+    title: "배포 자동화",
     description:
-      "깃허브 액션과 AWS의 Code Deploy 등을 통하여 서비스 배포를 자동화 할 수 있습니다.",
+      "도커와 깃허브 액션 등을 통하여 서비스 배포를 자동화 할 수 있습니다.",
   },
   {
     id: 8,
