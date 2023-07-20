@@ -56,6 +56,35 @@ const goals = [
   },
 ];
 
+const refLinks = [
+  {
+    id: 0,
+    description: (
+      <a
+        href="https://rune-shovel-96b.notion.site/Docker-14aabc62d4f24b1b8071d8ac7c6efd89?pvs=4"
+        target="_blank"
+        rel="noreferrer"
+        className="text-blue-500"
+      >
+        Docker 및 자동 배포 삽질기
+      </a>
+    ),
+  },
+  {
+    id: 1,
+    description: (
+      <a
+        href="https://rune-shovel-96b.notion.site/DIP-e7f5ffd3b7a44f57a05b71bee1dcee3b?pvs=4"
+        target="_blank"
+        rel="noreferrer"
+        className="text-blue-500"
+      >
+        DIP를 적용한 아키텍처
+      </a>
+    ),
+  },
+];
+
 const skills = [
   { id: 0, description: "NestJS" },
   { id: 1, description: "React" },
@@ -97,16 +126,21 @@ const articleList = [
   },
   {
     id: 2,
+    title: "관련 링크",
+    description: <ProjectListItems list={refLinks} />,
+  },
+  {
+    id: 3,
     title: "기술 스택",
     description: <ProjectListItems list={skills} />,
   },
   {
-    id: 3,
+    id: 4,
     title: "주요 기능",
     description: <ProjectListItems list={features} />,
   },
   {
-    id: 4,
+    id: 5,
     title: "회고",
     description: <PointodoReport />,
   },
