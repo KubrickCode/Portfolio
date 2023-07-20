@@ -28,12 +28,12 @@ const goals = [
   {
     id: 0,
     description:
-      "원래는 이전 개인 프로젝트들을 계속 고쳐나가볼 생각이었으나, 이전 팀 프로젝트에서 포인트 시스템이라는 것에 대한 더욱 깊은 공부가 필요함을 느끼고 간단하게나마 포인트를 적용시켜볼 만한 개인 프로젝트를 통해 깊게 공부해 보기로 마음먹음",
+      "단순한 계층형 아키텍처에서 느낀 문제점을 기반으로, 클린 아키텍처를 지향하는 방식의 설계 시도",
   },
   {
     id: 1,
     description:
-      "단순 계층형 아키텍처가 아닌, 클린 아키텍처에 대한 공부 및 적용",
+      "원래는 이전 개인 프로젝트들을 계속 고쳐나가볼 생각이었으나, 이전 팀 프로젝트에서 포인트 시스템이라는 것에 대한 더욱 깊은 공부가 필요함을 느끼고 간단하게나마 포인트를 적용시켜볼 만한 개인 프로젝트를 통해 깊게 공부해 보기로 마음먹음",
   },
   {
     id: 2,
@@ -59,10 +59,11 @@ const goals = [
 const skills = [
   { id: 0, description: "NestJS" },
   { id: 1, description: "React" },
-  { id: 2, description: "AWS EC2" },
-  { id: 3, description: "AWS RDS" },
-  { id: 4, description: "Docker" },
-  { id: 5, description: "Github Action" },
+  { id: 2, description: "PostgreSQL" },
+  { id: 3, description: "Redis" },
+  { id: 4, description: "AWS EC2, RDS" },
+  { id: 5, description: "Docker, Github Action" },
+  { id: 6, description: "Prisma, Jest, Swagger, Winston 등" },
 ];
 
 const features = [

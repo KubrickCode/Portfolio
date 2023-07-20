@@ -44,7 +44,31 @@ const reportList = [
   },
   {
     id: 4,
-    description: "추후 내용 추가 예정..",
+    description:
+      "이후 본격적으로 코드를 짜게 되는데, 이번 프로젝트의 가장 큰 목표이기도 한 클린 아키텍처 지향 방식의 설계를 먼저 하게 된다.",
+  },
+  {
+    id: 5,
+    description:
+      "이러한 도메인 주도 설계는 결국 유지보수 및 협업에 대한 용이성이 가장 큰 목표이고, 상세한 내용은 다음 링크에서 확인할 수 있다.",
+  },
+  {
+    id: 6,
+    description: (
+      <a
+        href="https://rune-shovel-96b.notion.site/DIP-e7f5ffd3b7a44f57a05b71bee1dcee3b?pvs=4"
+        target="_blank"
+        rel="noreferrer"
+        className="text-blue-500"
+      >
+        {">"}
+        {">"} DIP를 적용한 아키텍처
+      </a>
+    ),
+  },
+  {
+    id: 7,
+    description: "계속 작성 중...",
   },
 ];
 

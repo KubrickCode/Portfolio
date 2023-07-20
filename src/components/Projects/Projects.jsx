@@ -61,7 +61,7 @@ const projectsList = [
     id: 1,
     provider: "팀플",
     description:
-      "시나브로(멸종 위기종 데이터 분석 웹사이트) - 대상 - 2023/05/29 ~ 2023/06/16",
+      "시나브로(멸종 위기종 데이터 분석 웹사이트) - 2023/05/29 ~ 2023/06/16",
     component: <Sinabro />,
   },
   {
@@ -75,7 +75,7 @@ const projectsList = [
     id: 3,
     provider: "팀플",
     description:
-      "Folioverse(포트폴리오 제작 및 공유 웹사이트) - 최우수상 - 2023/04/24 ~ 2023/05/05",
+      "Folioverse(포트폴리오 제작 및 공유 웹사이트) - 2023/04/24 ~ 2023/05/05",
     component: <Folioverse />,
   },
   {
