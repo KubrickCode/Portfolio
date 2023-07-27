@@ -2,7 +2,6 @@ import { useState } from "react";
 import DevProfiler from "./DevProfiler/DevProfiler";
 import Pointodo from "./Pointodo/Pointodo";
 import Sinabro from "./Sinabro/Sinabro";
-import Folioverse from "./Folioverse/Folioverse";
 import Kcvoca from "./Kcvoca/Kcvoca";
 
 const Projects = () => {
@@ -61,7 +60,7 @@ const projectsList = [
     id: 1,
     provider: "팀플",
     description:
-      "시나브로(멸종 위기종 데이터 분석 웹사이트) - 2023/05/29 ~ 2023/06/16",
+      "시나브로(멸종 위기종 데이터 분석 웹사이트) - 대상 - 2023/05/29 ~ 2023/06/16",
     component: <Sinabro />,
   },
   {
@@ -73,13 +72,6 @@ const projectsList = [
   },
   {
     id: 3,
-    provider: "팀플",
-    description:
-      "Folioverse(포트폴리오 제작 및 공유 웹사이트) - 2023/04/24 ~ 2023/05/05",
-    component: <Folioverse />,
-  },
-  {
-    id: 4,
     provider: "개인",
     description: "KCVOCA(단어장 웹사이트) - 2023/02/01 ~ 2023/04/22",
     component: <Kcvoca />,
