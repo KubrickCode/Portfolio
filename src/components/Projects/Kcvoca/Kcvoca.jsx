@@ -1,10 +1,19 @@
 import ProjectListItems from "../ProjectListItems";
 import KcvocaReport from "./KcvocaReport";
 
-const Kcvoca = () => {
+const Kcvoca = ({ setModalState, setSrc }) => {
   return (
     <>
       <div>
+        <button
+          className="my-5 border px-2 py-1 rounded bg-blue-500 text-white hover:scale-[1.02] hover:bg-blue-600"
+          onClick={() => {
+            setModalState(true);
+            setSrc("kv영상.mp4");
+          }}
+        >
+          사이트 영상 보기
+        </button>
         <ul>
           {articleList.map((item) => (
             <li key={item.id}>
@@ -17,14 +26,6 @@ const Kcvoca = () => {
     </>
   );
 };
-
-const about = [
-  { id: 0, description: "첫 번째 개인 프로젝트" },
-  { id: 1, description: "단어장 웹 사이트" },
-  { id: 2, description: "폴더 구조를 통해 단어장을 관리하는 시스템" },
-  { id: 3, description: "나만의 단어장을 생성하고, 다양한 방식으로 학습 가능" },
-  { id: 4, description: <video src="kv영상.mp4" controls /> },
-];
 
 const links = [
   {
@@ -49,44 +50,17 @@ const links = [
         rel="noreferrer"
         className="text-blue-500"
       >
-        배포 링크
+        사이트 링크
       </a>
     ),
   },
 ];
 
-const goals = [
-  {
-    id: 0,
-    description:
-      "첫 개인 프로젝트이며, 처음으로 기획, 개발, 배포를 스스로 해봄",
-  },
-  {
-    id: 1,
-    description:
-      "완벽하게 해낼 수는 없겠지만, 다양한 기술에 대해 얕고 넓게 공부하는 것이 목표",
-  },
-  {
-    id: 2,
-    description: "깊은 부분을 다루지는 못하더라도 핵심적인 기능 개발에 초점",
-  },
-  {
-    id: 3,
-    description:
-      "의미가 남다른 프로젝트이고, 현재 부족한 부분이 너무 많은 상태로 완성되어서, 가능하다면 계속해서 업데이트 및 마이그레이션 진행 예정",
-  },
-];
-
-const skills = [
-  {
-    id: 0,
-    description:
-      "백엔드는 Express, (추가)프론트엔드는 React, DB는 MySQL, 배포시에는 AWS의 EC2와 RDS 이용",
-  },
-  { id: 1, description: "ORM 없이 간단한 쿼리문 위주로 리포지토리 구성" },
-  { id: 2, description: "(추가)스타일은 MUI 기반" },
-  { id: 3, description: "타입스크립트 사용, Passport와 JWT토큰 기반 인증" },
-  { id: 4, description: "추가적으로 AWS-Polly, Zustand, React-Query 등 사용" },
+const about = [
+  { id: 0, description: "첫 번째 개인 프로젝트" },
+  { id: 1, description: "단어장 웹 사이트" },
+  { id: 2, description: "폴더 구조를 통해 단어장을 관리하는 시스템" },
+  { id: 3, description: "나만의 단어장을 생성하고, 다양한 방식으로 학습 가능" },
 ];
 
 const features = [
@@ -141,35 +115,78 @@ const features = [
   },
 ];
 
+const goals = [
+  {
+    id: 0,
+    description: "HTML, CSS, 자바스크립트 학습 및 적용",
+  },
+  {
+    id: 1,
+    description: "NodeJS공부 및 백엔드 서버 구축",
+  },
+  {
+    id: 2,
+    description: "MySQL 백엔드 연결 및 기본적인 CRUD 적용",
+  },
+  {
+    id: 3,
+    description: "AWS를 통한 배포 및 24시간 구동되는 서버 구축",
+  },
+  {
+    id: 4,
+    description: "새로운 기술을 접목할 때마다 꾸준한 업데이트 및 마이그레이션",
+  },
+];
+
+const skills = [
+  {
+    id: 0,
+    description:
+      "백엔드는 Express, (추가)프론트엔드는 React, DB는 MySQL, 배포시에는 AWS의 EC2와 RDS 이용",
+  },
+  {
+    id: 1,
+    description:
+      "ORM 없이 간단한 mysql2를 이용하여 쿼리문 위주로 리포지토리 구성",
+  },
+  { id: 2, description: "추가적으로 AWS-Polly, Zustand, React-Query 등 사용" },
+  { id: 3, description: "(추가)스타일은 MUI 기반" },
+  {
+    id: 4,
+    description: "(추가)타입스크립트 사용, Passport와 JWT토큰 기반 인증",
+  },
+];
+
 const articleList = [
   {
     id: 0,
+    title: "관련 링크",
+    description: <ProjectListItems list={links} />,
+  },
+  {
+    id: 1,
     title: "개요",
     description: <ProjectListItems list={about} />,
   },
   {
-    id: 1,
-    title: "링크",
-    description: <ProjectListItems list={links} />,
-  },
-  {
     id: 2,
-    title: "목표",
-    description: <ProjectListItems list={goals} />,
-  },
-  {
-    id: 3,
-    title: "기술 스택",
-    description: <ProjectListItems list={skills} />,
-  },
-  {
-    id: 4,
     title: "주요 기능",
     description: <ProjectListItems list={features} />,
   },
   {
+    id: 3,
+    title: "목표",
+    description: <ProjectListItems list={goals} />,
+  },
+  {
+    id: 4,
+    title: "기술 스택",
+    description: <ProjectListItems list={skills} />,
+  },
+
+  {
     id: 5,
-    title: "회고",
+    title: "트러블 슈팅 및 성과",
     description: <KcvocaReport />,
   },
 ];

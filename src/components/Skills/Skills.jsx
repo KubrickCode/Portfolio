@@ -25,19 +25,19 @@ const skillsList = [
     id: 1,
     title: "TypeScript",
     description:
-      "타입스크립트를 사용하여, 기존 자바스크립트의 단점들을 보완하고, 이를 통해 좀 더 객체지향적인 코드를 지향합니다.",
+      "타입스크립트를 사용하여, 기존 자바스크립트의 단점들을 보완하고, 이를 통해 좀 더 객체 지향적인 코드를 지향합니다.",
   },
   {
     id: 2,
     title: "PostgreSQL / MySQL / Prisma",
     description:
-      "RDBMS를 통해 데이터베이스를 구축하고 백엔드 서버와 연동이 가능하며, SQL 쿼리문 혹은 Prisma와 같은 ORM을 다룰 수 있습니다.",
+      "RDBMS를 통해 데이터베이스를 구축하고 백엔드 서버와 연동이 가능하며, SQL 원시 쿼리문과 Prisma와 같은 ORM을 다룰 수 있고, 실행 계획을 통해 쿼리 성능을 분석합니다.",
   },
   {
     id: 3,
-    title: "Jest",
+    title: "Jest / JMeter",
     description:
-      "Jest 라이브러리와 모킹을 통해 단위 테스트, 통합 테스트, E2E 테스트 등을 통한 TDD를 지향합니다.",
+      "Jest를 통해 단위 테스트, 통합 테스트, E2E 테스트 코드를 구축 가능하며, JMeter를 통해 부하 테스트를 진행합니다.",
   },
   {
     id: 4,
@@ -49,7 +49,7 @@ const skillsList = [
     id: 5,
     title: "AWS",
     description:
-      "AWS의 서비스들을 이용하여 클라우드 서버 혹은 데이터베이스 등을 대여하여 서비스를 구축할 수 있습니다.",
+      "AWS의 EC2, RDS, S3 등의 서비스들을 이용하여 클라우드 서버 혹은 데이터베이스 등을 대여하여 서비스를 구축할 수 있습니다.",
   },
   {
     id: 6,
@@ -59,15 +59,15 @@ const skillsList = [
   },
   {
     id: 7,
-    title: "배포 자동화",
+    title: "Git / GitHub / GitHub Action",
     description:
-      "도커와 깃허브 액션 등을 통하여 서비스 배포를 자동화 할 수 있습니다.",
+      "깃과 깃허브를 통해 버전과 코드를 관리하며, 깃허브 액션의 파이프라인을 통하여 서비스 배포를 자동화 할 수 있습니다.",
   },
   {
     id: 8,
     title: "프론트엔드 기술",
     description:
-      "리액트 등을 이용하여 클라이언트 UI를 구성할 수 있으며, Tailwind 혹은 MUI같은 CSS 프레임워크, Zustand와 같은 상태관리 라이브러리, React-Query와 같은 서버 비동기 통신용 라이브러리 등을 사용할 수 있습니다.",
+      "리액트 혹은 HTML, 바닐라 자바스크립트, CSS등을 이용하여 클라이언트 UI를 구성할 수 있으며, Tailwind 혹은 MUI와같은 CSS 프레임워크, Zustand와 같은 상태관리 라이브러리, React-Query와 같은 서버 비동기 통신용 라이브러리 등을 사용할 수 있습니다.",
   },
 ];
 

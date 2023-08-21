@@ -3,9 +3,41 @@ import DevProfiler from "./DevProfiler/DevProfiler";
 import Pointodo from "./Pointodo/Pointodo";
 import Sinabro from "./Sinabro/Sinabro";
 import Kcvoca from "./Kcvoca/Kcvoca";
+import Modal from "../Modal";
 
 const Projects = () => {
   const [open, setOpen] = useState(Array(5).fill(false));
+  const [modalState, setModalState] = useState(false);
+  const [src, setSrc] = useState(0);
+
+  const projectsList = [
+    {
+      id: 0,
+      provider: "개인★",
+      description: "POINTODO(투두 리스트 웹사이트) - 2023/06/21 ~ 현재 진행중",
+      component: <Pointodo setModalState={setModalState} setSrc={setSrc} />,
+    },
+    {
+      id: 1,
+      provider: "팀플",
+      description:
+        "시나브로(멸종 위기종 데이터 분석 웹사이트) - 대상 - 2023/05/29 ~ 2023/06/16",
+      component: <Sinabro setModalState={setModalState} setSrc={setSrc} />,
+    },
+    {
+      id: 2,
+      provider: "개인",
+      description:
+        "DevProfiler(웹 개발자 역량 테스트 웹사이트) - 2023/05/15 ~ 2023/05/25",
+      component: <DevProfiler setModalState={setModalState} setSrc={setSrc} />,
+    },
+    {
+      id: 3,
+      provider: "개인",
+      description: "KCVOCA(단어장 웹사이트) - 2023/02/01 ~ 2023/04/22",
+      component: <Kcvoca setModalState={setModalState} setSrc={setSrc} />,
+    },
+  ];
 
   return (
     <>
@@ -45,37 +77,9 @@ const Projects = () => {
           </li>
         ))}
       </ul>
+      <Modal modalState={modalState} setModalState={setModalState} src={src} />
     </>
   );
 };
-
-const projectsList = [
-  {
-    id: 0,
-    provider: "개인★",
-    description: "POINTODO(투두 리스트 웹사이트) - 2023/06/21 ~ 현재 진행중",
-    component: <Pointodo />,
-  },
-  {
-    id: 1,
-    provider: "팀플",
-    description:
-      "시나브로(멸종 위기종 데이터 분석 웹사이트) - 대상 - 2023/05/29 ~ 2023/06/16",
-    component: <Sinabro />,
-  },
-  {
-    id: 2,
-    provider: "개인",
-    description:
-      "DevProfiler(웹 개발자 역량 테스트 웹사이트) - 2023/05/15 ~ 2023/05/25",
-    component: <DevProfiler />,
-  },
-  {
-    id: 3,
-    provider: "개인",
-    description: "KCVOCA(단어장 웹사이트) - 2023/02/01 ~ 2023/04/22",
-    component: <Kcvoca />,
-  },
-];
 
 export default Projects;

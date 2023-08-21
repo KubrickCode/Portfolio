@@ -19,15 +19,18 @@ const Profile = () => {
           ))}
         </ul>
       </div>
-      <ul className="lg:ml-5 border p-5 rounded-lg">
-        {aboutList.map((item) => (
-          <li key={item.id} className="my-5">
-            <h2 className="my-2 text-lg">{item.title}</h2>
-            <p className="my-2 text-neutral-600">{item.description1}</p>
-            <p className="my-2 text-neutral-600">{item.description2}</p>
-          </li>
-        ))}
-      </ul>
+      <div className="lg:ml-5 border p-5 rounded-lg items-center h-fit">
+        <h2 className="my-2 text-xl">안녕하세요 백엔드 개발자 이승현입니다.</h2>
+        <ul>
+          {aboutList.map((item) => (
+            <li key={item.id} className="my-5">
+              <p className="my-2 text-neutral-600 text-lg">
+                {item.description}
+              </p>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };
@@ -45,7 +48,7 @@ const profileList = [
   },
   {
     id: 2,
-    title: "깃허브",
+    title: "GitHub",
     description: (
       <a
         href="https://github.com/KubrickCode"
@@ -53,7 +56,21 @@ const profileList = [
         rel="noreferrer"
         className="text-blue-500 hover:text-blue-700"
       >
-        https://github.com/KubrickCode
+        Link
+      </a>
+    ),
+  },
+  {
+    id: 3,
+    title: "블로그",
+    description: (
+      <a
+        href="https://kubrickcode.tistory.com/"
+        target="_blank"
+        rel="noreferrer"
+        className="text-blue-500 hover:text-blue-700"
+      >
+        Link
       </a>
     ),
   },
@@ -62,28 +79,31 @@ const profileList = [
 const aboutList = [
   {
     id: 0,
-    title: "1. 새로운 기술을 배우는 데에 두려움이 없습니다",
-    description1:
-      "- 한 가지 기술에 대해 깊게 파보기 이전에, 다양한 기술을 습득한 뒤 필요에 따라 깊게 공부하는 것이 즐겁습니다.",
-    description2:
-      "- 러닝 커브가 있을지라도 진보된 혹은 나에게 필요한 기술을 체득하면 분명한 이점이 있다고 생각합니다.",
+
+    description: "- 새로운 기술을 배우는 걸 즐기고 두려움이 없는 개발자입니다.",
   },
 
   {
     id: 1,
-    title: "2. 기술적인 부분 외에도 아키텍처에 관심이 많습니다.",
-    description1:
-      "- 단순히 코드를 짜는 것 외에도, 어떻게 해야 넓은 시각으로 구조를 설계해야 할지, 항상 고민을 하게 됩니다.",
-    description2:
-      "- 클린한 아키텍처를 기반으로 유지 보수와 협업에 용이한 애플리케이션을 만드는 과정이 즐겁습니다.",
+    description: "- 기술적인 부분 외에도 아키텍처 및 설계에 관심이 많습니다.",
   },
   {
     id: 2,
-    title: "3. 협업에 용이한 개발자가 되고자 합니다.",
-    description1:
-      "- 항상 모자란 부분에 있어서는 피드백을 겸허히 받아들일 준비가 되어있고, 잘하는 부분에서는 최대한 알기 쉽게 알려주는 것을 좋아합니다.",
-    description2:
-      "- 어떻게 해야 동료, 다른 직무 간 원활하게 커뮤니케이션을 할 수 있을지, 어떻게 해야 좋은 문서화를 통해 협업을 할 수 있을지 늘 고민합니다.",
+    description:
+      "- 다양한 기술 구현도 좋아하지만, 깨끗한 코드, 테스트 등 유지 보수에도 관심이 많습니다.",
+  },
+  {
+    id: 3,
+    description: "- 가능하다면 반복적인 작업을 자동화시키는 것을 좋아합니다.",
+  },
+  {
+    id: 4,
+    description:
+      "- 협업에 용이한 개발자가 되기 위해 커뮤니케이션, 협업에 용이한 코드, 다른 직무와의 소통, 코드 리뷰 등에 늘 주의를 기울입니다.",
+  },
+  {
+    id: 5,
+    description: "- 그 무엇보다 개발하는 과정이 너무 즐겁습니다.",
   },
 ];
 

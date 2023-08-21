@@ -1,10 +1,19 @@
 import ProjectListItems from "../ProjectListItems";
 import PointodoReport from "./PointodoReport";
 
-const Pointodo = () => {
+const Pointodo = ({ setModalState, setSrc }) => {
   return (
     <>
       <div>
+        <button
+          className="my-5 border px-2 py-1 rounded bg-blue-500 text-white hover:scale-[1.02] hover:bg-blue-600"
+          onClick={() => {
+            setModalState(true);
+            setSrc("Pointodo영상.mp4");
+          }}
+        >
+          사이트 영상 보기
+        </button>
         <ul>
           {articleList.map((item) => (
             <li key={item.id}>
@@ -18,55 +27,17 @@ const Pointodo = () => {
   );
 };
 
-const about = [
-  { id: 0, description: "세 번째 개인 프로젝트" },
-  { id: 1, description: "투두 리스트 웹사이트" },
-  { id: 2, description: "할 일 정리 및 포인트 시스템" },
-];
-
-const goals = [
-  {
-    id: 0,
-    description:
-      "단순한 계층형 아키텍처에서 느낀 문제점을 기반으로, 클린 아키텍처를 지향하는 방식의 설계 시도",
-  },
-  {
-    id: 1,
-    description:
-      "원래는 이전 개인 프로젝트들을 계속 고쳐나가볼 생각이었으나, 이전 팀 프로젝트에서 포인트 시스템이라는 것에 대한 더욱 깊은 공부가 필요함을 느끼고 간단하게나마 포인트를 적용시켜볼 만한 개인 프로젝트를 통해 깊게 공부해 보기로 마음먹음",
-  },
-  {
-    id: 2,
-    description:
-      "DB의 인덱스, 트랜잭션에 대해 더욱 깊게 공부하고, 성능 테스트를 통해 성능 개선까지 하는 것이 목표",
-  },
-  {
-    id: 3,
-    description:
-      "동시성, 무결성 문제 등 일어날 수 있는 다양한 문제들에 대한 해결이 목표",
-  },
-  {
-    id: 4,
-    description: "도커 및 배포 자동화에 대한 공부 및 적용",
-  },
-  {
-    id: 5,
-    description:
-      "로깅, 캐싱, 테스트 등 백엔드 개발자가 알아야할 각종 필수 기술들에 대해 이 프로젝트를 통해 더욱 깊게 공부하는 것이 목표",
-  },
-];
-
 const refLinks = [
   {
     id: 0,
     description: (
       <a
-        href="https://rune-shovel-96b.notion.site/Docker-14aabc62d4f24b1b8071d8ac7c6efd89?pvs=4"
+        href="https://pointodo.duckdns.org"
         target="_blank"
         rel="noreferrer"
         className="text-blue-500"
       >
-        Docker 및 자동 배포 삽질기
+        사이트 링크
       </a>
     ),
   },
@@ -74,32 +45,80 @@ const refLinks = [
     id: 1,
     description: (
       <a
-        href="https://rune-shovel-96b.notion.site/DIP-e7f5ffd3b7a44f57a05b71bee1dcee3b?pvs=4"
+        href="https://kubrickcode.tistory.com/category/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%ED%9A%8C%EA%B3%A0/POINTODO%28%ED%95%A0%20%EC%9D%BC%20%EC%A0%95%EB%A6%AC%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%29"
         target="_blank"
         rel="noreferrer"
         className="text-blue-500"
       >
-        DIP를 적용한 아키텍처
+        Pointodo 일지 블로그 글 모음
+      </a>
+    ),
+  },
+  {
+    id: 2,
+    description: (
+      <a
+        href="https://pointodo.duckdns.org/api/docs"
+        target="_blank"
+        rel="noreferrer"
+        className="text-blue-500"
+      >
+        API 문서
+      </a>
+    ),
+  },
+  {
+    id: 3,
+    description: (
+      <a
+        href="https://github.com/KubrickCode/Pointodo-BE"
+        target="_blank"
+        rel="noreferrer"
+        className="text-blue-500"
+      >
+        깃허브 백엔드
+      </a>
+    ),
+  },
+  {
+    id: 3,
+    description: (
+      <a
+        href="https://github.com/KubrickCode/Pointodo-FE"
+        target="_blank"
+        rel="noreferrer"
+        className="text-blue-500"
+      >
+        깃허브 프론트엔드
       </a>
     ),
   },
 ];
 
-const skills = [
-  { id: 0, description: "NestJS" },
-  { id: 1, description: "React" },
-  { id: 2, description: "PostgreSQL" },
-  { id: 3, description: "Redis" },
-  { id: 4, description: "AWS EC2, RDS" },
-  { id: 5, description: "Docker, Github Action" },
-  { id: 6, description: "Prisma, Jest, Swagger, Winston 등" },
+const about = [
+  { id: 0, description: "세 번째 개인 프로젝트" },
+  { id: 1, description: "투두 리스트 웹사이트" },
+  { id: 2, description: "할 일 정리 및 포인트, 뱃지 시스템" },
+  {
+    id: 3,
+    description: (
+      <a
+        href="https://kubrickcode.tistory.com/entry/1-Pointodo-%EC%84%9C%EB%B9%84%EC%8A%A4-%EA%B0%9C%EC%9A%94-%EA%B8%B0%ED%9A%8D-%EC%9D%98%EB%8F%84-%EB%AA%A9%ED%91%9C-%EC%82%AC%EC%9A%A9-%EA%B8%B0%EC%88%A0"
+        target="_blank"
+        rel="noreferrer"
+        className="text-blue-500"
+      >
+        블로그 글 - (1) Pointodo 서비스 개요, 기획 의도, 목표, 사용 기술, ERD
+      </a>
+    ),
+  },
 ];
 
 const features = [
   {
     id: 0,
     description:
-      "기본적으로 로그인해야 시스템 이용이 가능하고, 날짜 별로 할 일 목록을 만들 수 있음.",
+      "기본적으로 로그인해야 시스템 이용이 가능하고, 할 일 목록을 만들 수 있음.",
   },
   {
     id: 1,
@@ -116,7 +135,7 @@ const features = [
   {
     id: 4,
     description:
-      "작업을 완료할 때마다 포인트를 얻을 수 있고, 중요도에 따라 포인트를 다르게 얻을 수 있고, 포인트를 소모하여 특정 뱃지 획득 가능.",
+      "작업을 완료할 때마다 포인트를 얻을 수 있고, 중요도에 따라 포인트를 다르게 얻을 수 있고, 포인트를 소모하여 특정 뱃지 구매 가능.",
   },
   {
     id: 5,
@@ -125,35 +144,78 @@ const features = [
   },
 ];
 
-const articleList = [
+const goals = [
   {
     id: 0,
-    title: "개요",
-    description: <ProjectListItems list={about} />,
+    description:
+      "도커, 깃허브 액션, 배포 테스트 등을 통해 배포 과정을 자동화 시키는 것",
   },
   {
     id: 1,
-    title: "목표",
-    description: <ProjectListItems list={goals} />,
+    description:
+      "이전 프로젝트들에서 항상 아쉬웠던 의존 관계를 역전 시켜서 클린 코드 기반의 새로운 계층형 아키텍처를 구축하는 것",
   },
   {
     id: 2,
+    description:
+      "관계형 DB에서의 트랜잭션과 락 등을 깊게 공부하고 설계하여 동시성 문제를 해결할 것",
+  },
+  {
+    id: 3,
+    description:
+      "관계형 DB에서의 인덱스에 대해 더 깊게 공부하고, 실행 계획 등을 통해 쿼리 성능을 개선해 나갈 것",
+  },
+  {
+    id: 4,
+    description:
+      "각종 테스트 구축과 배포 과정에서의 테스트 자동화를 통해 코드를 유지 보수 할 것",
+  },
+  {
+    id: 5,
+    description:
+      "기존에 사용하지 않던 로깅, 캐싱 등을 프로젝트에 접목시켜볼 것",
+  },
+];
+
+const skills = [
+  { id: 0, description: "NestJS" },
+  { id: 1, description: "React" },
+  { id: 2, description: "PostgreSQL" },
+  { id: 3, description: "Redis" },
+  { id: 4, description: "AWS EC2, RDS, S3" },
+  { id: 5, description: "Docker, Github Action, Vercel" },
+  { id: 6, description: "Prisma, Jest, Swagger, Winston, JMeter 등" },
+];
+
+const articleList = [
+  {
+    id: 0,
     title: "관련 링크",
     description: <ProjectListItems list={refLinks} />,
   },
   {
-    id: 3,
-    title: "기술 스택",
-    description: <ProjectListItems list={skills} />,
+    id: 1,
+    title: "개요",
+    description: <ProjectListItems list={about} />,
   },
   {
-    id: 4,
+    id: 2,
     title: "주요 기능",
     description: <ProjectListItems list={features} />,
   },
   {
+    id: 3,
+    title: "목표",
+    description: <ProjectListItems list={goals} />,
+  },
+  {
+    id: 4,
+    title: "기술 스택",
+    description: <ProjectListItems list={skills} />,
+  },
+  {
     id: 5,
-    title: "회고",
+    title: "트러블 슈팅 및 성과",
     description: <PointodoReport />,
   },
 ];

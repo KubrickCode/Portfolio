@@ -1,10 +1,19 @@
 import ProjectListItems from "../ProjectListItems";
 import SinabroReport from "./SinabroReport";
 
-const Sinabro = () => {
+const Sinabro = ({ setModalState, setSrc }) => {
   return (
     <>
       <div>
+        <button
+          className="my-5 border px-2 py-1 rounded bg-blue-500 text-white hover:scale-[1.02] hover:bg-blue-600"
+          onClick={() => {
+            setModalState(true);
+            setSrc("2차팀플.mp4");
+          }}
+        >
+          사이트 영상 보기
+        </button>
         <ul>
           {articleList.map((item) => (
             <li key={item.id}>
@@ -17,20 +26,6 @@ const Sinabro = () => {
     </>
   );
 };
-
-const about = [
-  { id: 0, description: "두 번째 팀 프로젝트" },
-  { id: 1, description: "멸종 위기종 데이터 분석 프로젝트" },
-  {
-    id: 2,
-    description:
-      "포인트와 컬렉션과 같은 재미요소를 이용하여 사용자의 웹 방문율을 높인 뒤 경각심을 심어 멸종 위기종에 대한 관심도를 높이려고 함",
-  },
-  {
-    id: 3,
-    description: <video src="2차팀플.mp4" controls />,
-  },
-];
 
 const links = [
   {
@@ -55,7 +50,7 @@ const links = [
         rel="noreferrer"
         className="text-blue-500"
       >
-        배포 링크(폐쇄 예정)
+        사이트 링크(폐쇄 예정)
       </a>
     ),
   },
@@ -71,6 +66,54 @@ const links = [
         API 문서(폐쇄 예정)
       </a>
     ),
+  },
+];
+
+const about = [
+  { id: 0, description: "두 번째 팀 프로젝트" },
+  { id: 1, description: "멸종 위기종 데이터 분석 프로젝트" },
+  {
+    id: 2,
+    description:
+      "포인트와 컬렉션과 같은 재미요소를 이용하여 사용자의 웹 방문율을 높인 뒤 경각심을 심어 멸종 위기종에 대한 관심도를 높이려고 함",
+  },
+];
+
+const features = [
+  {
+    id: 0,
+    description:
+      "포인트를 적립/소모 하는 활동 외의 대부분 기능은 비로그인 시에도 가능.",
+  },
+  {
+    id: 1,
+    description:
+      "자료 탭에서 지역별 멸종위기종에 대한 분포 데이터(개체, 분포 그래프)를 지도를 클릭하여 확인할 수 있음.",
+  },
+  {
+    id: 2,
+    description:
+      "자료 탭에서 추가적으로 멸종위기종에 대한 원인 데이터를 시각화 그래프와 함께 확인할 수 있음.",
+  },
+  {
+    id: 3,
+    description:
+      "관리자 페이지를 통해 유저 관리, 그리고 영상, 캠페인, 동참, 소식 등 관리자 권한으로 업데이트가 필요한 컨텐츠들을 핸들링 가능.",
+  },
+  {
+    id: 4,
+    description:
+      "여러가지 활동들을 통해 포인트를 적립할 수 있고, 일부 활동들은 포인트 적립에 대한 일일 제한이 있음.",
+  },
+  {
+    id: 5,
+    description:
+      "포인트를 소모하여 멸종위기종 카드를 획득하여 나의 컬렉션을 채워나갈 수 있음.",
+  },
+  {
+    id: 6,
+    description:
+      "이외 비밀번호 변경, 회원 탈퇴, 포인트 내역 확인 등의 기능이 있음.",
   },
 ];
 
@@ -150,73 +193,35 @@ const skills = [
   },
 ];
 
-const features = [
-  {
-    id: 0,
-    description:
-      "포인트를 적립/소모 하는 활동 외의 대부분 기능은 비로그인 시에도 가능.",
-  },
-  {
-    id: 1,
-    description:
-      "자료 탭에서 지역별 멸종위기종에 대한 분포 데이터(개체, 분포 그래프)를 지도를 클릭하여 확인할 수 있음.",
-  },
-  {
-    id: 2,
-    description:
-      "자료 탭에서 추가적으로 멸종위기종에 대한 원인 데이터를 시각화 그래프와 함께 확인할 수 있음.",
-  },
-  {
-    id: 3,
-    description:
-      "관리자 페이지를 통해 유저 관리, 그리고 영상, 캠페인, 동참, 소식 등 관리자 권한으로 업데이트가 필요한 컨텐츠들을 핸들링 가능.",
-  },
-  {
-    id: 4,
-    description:
-      "여러가지 활동들을 통해 포인트를 적립할 수 있고, 일부 활동들은 포인트 적립에 대한 일일 제한이 있음.",
-  },
-  {
-    id: 5,
-    description:
-      "포인트를 소모하여 멸종위기종 카드를 획득하여 나의 컬렉션을 채워나갈 수 있음.",
-  },
-  {
-    id: 6,
-    description:
-      "이외 비밀번호 변경, 회원 탈퇴, 포인트 내역 확인 등의 기능이 있음.",
-  },
-];
-
 const articleList = [
   {
     id: 0,
+    title: "관련 링크",
+    description: <ProjectListItems list={links} />,
+  },
+  {
+    id: 1,
     title: "개요",
     description: <ProjectListItems list={about} />,
   },
   {
-    id: 1,
-    title: "링크",
-    description: <ProjectListItems list={links} />,
-  },
-  {
     id: 2,
-    title: "목표",
-    description: <ProjectListItems list={goals} />,
-  },
-  {
-    id: 3,
-    title: "기술 스택 및 나의 역할",
-    description: <ProjectListItems list={skills} />,
-  },
-  {
-    id: 4,
     title: "주요 기능",
     description: <ProjectListItems list={features} />,
   },
   {
+    id: 3,
+    title: "목표",
+    description: <ProjectListItems list={goals} />,
+  },
+  {
+    id: 4,
+    title: "기술 스택 및 나의 역할",
+    description: <ProjectListItems list={skills} />,
+  },
+  {
     id: 5,
-    title: "회고",
+    title: "트러블 슈팅 및 성과",
     description: <SinabroReport />,
   },
 ];
