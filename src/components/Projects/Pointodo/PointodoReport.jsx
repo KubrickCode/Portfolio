@@ -124,10 +124,15 @@ const reportList = [
   {
     id: 18,
     description:
-      "모든 과정은 블로그에 상세히 작성하였으니 다음 링크에서 확인 가능합니다.",
+      "추가적으로 실행계획을 통해 테이블의 정규화 및 비정규화에 대해 고려하게 되었고, 이를 통해 테이블 구조 또한 개선하게 되었습니다.",
   },
   {
     id: 19,
+    description:
+      "모든 과정은 블로그에 상세히 작성하였으니 다음 링크에서 확인 가능합니다.",
+  },
+  {
+    id: 20,
     description: (
       <a
         href="https://kubrickcode.tistory.com/entry/4-Pointodo-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%9D%B8%EB%8D%B1%EC%8A%A4-%EC%84%A4%EA%B3%84-%EB%B0%8F-%EC%8B%A4%ED%96%89-%EA%B3%84%ED%9A%8D%EC%9D%84-%ED%86%B5%ED%95%9C-%EC%BF%BC%EB%A6%AC-%EC%84%B1%EB%8A%A5-%EA%B0%9C%EC%84%A0"
@@ -142,36 +147,51 @@ const reportList = [
     ),
   },
   {
-    id: 20,
-    description: <h3 className="text-lg">4. DB 동시성 및 무결성 문제 해결</h3>,
-  },
-  {
     id: 21,
-    description:
-      "포인트라는 시스템을 도입한 이상 여러가지 동시성 및 무결성 등 문제가 발생합니다.",
+    description: (
+      <a
+        href="https://kubrickcode.tistory.com/entry/7-Pointodo-%ED%85%8C%EC%9D%B4%EB%B8%94-%EC%A0%95%EA%B7%9C%ED%99%94%EB%B9%84%EC%A0%95%EA%B7%9C%ED%99%94"
+        target="_blank"
+        rel="noreferrer"
+        className="text-blue-500"
+      >
+        {">"}
+        {">"} (7) Pointodo 테이블 정규화/비정규화
+      </a>
+    ),
   },
   {
     id: 22,
-    description:
-      "포인트에 대한 관리를 UPDATE가 아닌 INSERT,SELECT,DELETE 만으로 정규화를 통해 무결성 및 확장성 문제를 테이블 설계를 통해 해결하였습니다.",
+    description: <h3 className="text-lg">4. DB 동시성 및 무결성 문제 해결</h3>,
   },
   {
     id: 23,
     description:
-      "그리고 포인트를 적립, 소모하는 과정에서 여러가지 동시성 문제가 발생할 수 있는데, 이러한 로직들의 경우 동시성 문제가 일어날 가능성 자체는 적지만 그럼에도 동시성 문제를 해결은 해야하기 때문에 트랜잭션을 통한 DB자체 롤백을 이용하는 것이 아닌, 낙관적 락을 통해 애플리케이션 레벨에서 롤백을 처리해줍니다.",
+      "포인트라는 시스템을 도입한 이상 여러가지 동시성 및 무결성 등 문제가 발생합니다.",
   },
   {
     id: 24,
     description:
-      "이러한 동시성 문제가 어떻게 일어나는지와 어떻게 해결했는지를 JMeter를 통해 직접 어뷰징을 일으키며 해결 과정을 기록하였습니다.",
+      "포인트에 대한 관리를 UPDATE가 아닌 INSERT,SELECT,DELETE 만으로 정규화를 통해 무결성 및 확장성 문제를 테이블 설계를 통해 해결하였습니다.",
   },
   {
     id: 25,
     description:
-      "모든 과정은 블로그에 상세히 작성하였으니 다음 링크에서 확인 가능합니다.",
+      "그리고 포인트를 적립, 소모하는 과정에서 여러가지 동시성 문제가 발생할 수 있는데, 이러한 로직들의 경우 동시성 문제가 일어날 가능성 자체는 적지만 그럼에도 동시성 문제를 해결은 해야하기 때문에 트랜잭션을 통한 DB자체 롤백을 이용하는 것이 아닌, 낙관적 락을 통해 애플리케이션 레벨에서 롤백을 처리해줍니다.",
   },
   {
     id: 26,
+    description:
+      "이러한 동시성 문제가 어떻게 일어나는지와 어떻게 해결했는지를 JMeter를 통해 직접 어뷰징을 일으키며 해결 과정을 기록하였습니다.",
+  },
+
+  {
+    id: 27,
+    description:
+      "모든 과정은 블로그에 상세히 작성하였으니 다음 링크에서 확인 가능합니다.",
+  },
+  {
+    id: 28,
     description: (
       <a
         href="https://kubrickcode.tistory.com/entry/5-Pointodo-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EB%8F%99%EC%8B%9C%EC%84%B1-%EB%B0%8F-%EB%AC%B4%EA%B2%B0%EC%84%B1-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0%EC%B1%85%EB%82%99%EA%B4%80%EC%A0%81-%EB%9D%BD-JMeter"
@@ -182,6 +202,49 @@ const reportList = [
         {">"}
         {">"} (5) Pointodo 데이터베이스 동시성 및 무결성 문제 해결책(낙관적 락,
         JMeter)
+      </a>
+    ),
+  },
+  {
+    id: 29,
+    description: <h3 className="text-lg">5. 사용자 인증 구현 및 문제 해결</h3>,
+  },
+  {
+    id: 30,
+    description:
+      "기존 프로젝트들에서도 항상 사용자 시스템이 있었기 때문에 인증 구현에 대한 고민이 항상 있었습니다.",
+  },
+  {
+    id: 31,
+    description:
+      "세션의 문제점을 해결하고자 JWT를 도입하였고, 그로 인해 따라오는 보안 문제를 해결하기 위해 레디스와 리프레시 토큰을 이용하는 방식을 차용하였습니다.",
+  },
+  {
+    id: 32,
+    description:
+      "물론 세션의 장점을 모두 가져갈 수는 없지만, 이 프로젝트의 서비스를 생각해봤을 때 JWT방식으로도 큰 문제가 없다고 생각하였습니다.",
+  },
+  {
+    id: 33,
+    description:
+      "그리고 추가적으로 토큰을 기존에 로컬스토리지로 관리하며 보안적인 부분이나, 소셜로그인시 클라이언트에 토큰 응답부분에서 문제점이 많았으나, 쿠키를 이용해 이러한 부분들을 해결하였습니다.",
+  },
+  {
+    id: 34,
+    description:
+      "모든 과정은 블로그에 상세히 작성하였으니 다음 링크에서 확인 가능합니다.",
+  },
+  {
+    id: 35,
+    description: (
+      <a
+        href="https://kubrickcode.tistory.com/entry/8-Pointodo-%ED%9A%8C%EC%9B%90-%EC%9D%B8%EC%A6%9D-%EA%B5%AC%ED%98%84-%EB%B0%A9%EB%B2%95%EC%86%8C%EC%85%9C-%EB%A1%9C%EA%B7%B8%EC%9D%B8-JWT-%EC%BF%A0%ED%82%A4-Passport"
+        target="_blank"
+        rel="noreferrer"
+        className="text-blue-500"
+      >
+        {">"}
+        {">"} (8) Pointodo 회원 인증 구현 방법(소셜 로그인, JWT, 쿠키, Passport)
       </a>
     ),
   },
