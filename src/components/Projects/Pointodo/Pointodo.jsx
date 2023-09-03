@@ -63,7 +63,7 @@ const refLinks = [
         rel="noreferrer"
         className="text-blue-500"
       >
-        API 문서
+        API 문서 (열람 인증은 문의해주세요)
       </a>
     ),
   },
