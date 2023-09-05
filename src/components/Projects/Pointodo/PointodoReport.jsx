@@ -227,7 +227,7 @@ const reportList = [
   {
     id: 33,
     description:
-      "그리고 추가적으로 토큰을 기존에 로컬스토리지로 관리하며 보안적인 부분이나, 소셜로그인시 클라이언트에 토큰 응답부분에서 문제점이 많았으나, 쿠키를 이용해 이러한 부분들을 해결하였습니다.",
+      "이외에도 토큰의 탈취 방어 및 솔루션 등에 대해 여러가지 해결책을 도입하였습니다.(쿠키와 쿠키의 각종 보안 옵션 사용 및 리프레시 토큰을 레디스에 세션으로 관리하며 IP및 디바이스 정보 관리)",
   },
   {
     id: 34,
@@ -245,6 +245,92 @@ const reportList = [
       >
         {">"}
         {">"} (8) Pointodo 회원 인증 구현 방법(소셜 로그인, JWT, 쿠키, Passport)
+      </a>
+    ),
+  },
+  {
+    id: 36,
+    description: <h3 className="text-lg">6. HTTP 메서드와 상태코드</h3>,
+  },
+  {
+    id: 37,
+    description:
+      "그동안 기계적으로 당연한듯이 REST API를 사용해왔지만, HTTP에 대해 더 고민해보니 기존 설계 방식에 문제가 많았습니다.",
+  },
+  {
+    id: 38,
+    description:
+      "특히 각 메서드의 차이점에 대해 명확히 구분하고 사용하지 않아서 POST, PUT, PATCH를 적재적소에 활용하지 못하였습니다.",
+  },
+  {
+    id: 39,
+    description:
+      "상태 코드또한 API의 용도에 맞지 않게 사용한 부분이 굉장히 많았음을 깨닳았습니다.",
+  },
+  {
+    id: 40,
+    description:
+      "공부를 통해 적절히 메서드와 상태코드, 그리고 요청 방식등에 대해 대폭 수정하고, 문서화 시키는 작업을 진행하였습니다.",
+  },
+  {
+    id: 41,
+    description:
+      "모든 과정은 블로그에 상세히 작성하였으니 다음 링크에서 확인 가능합니다.",
+  },
+  {
+    id: 42,
+    description: (
+      <a
+        href="https://kubrickcode.tistory.com/entry/10-Pointodo-HTTP-%EB%A9%94%EC%84%9C%EB%93%9C%EC%99%80-%EC%83%81%ED%83%9C-%EC%BD%94%EB%93%9CFOR-REST-API"
+        target="_blank"
+        rel="noreferrer"
+        className="text-blue-500"
+      >
+        {">"}
+        {">"} (10) Pointodo HTTP 메서드와 상태 코드(FOR REST API)
+      </a>
+    ),
+  },
+  {
+    id: 43,
+    description: <h3 className="text-lg">7. DTO와 직렬화 및 역직렬화</h3>,
+  },
+  {
+    id: 44,
+    description:
+      "DTO를 통해 계층 간 데이터 전송을 엔티티에만 의존하지 않고, 관심사 분리 시키는 방법에 대해 많이 고민하였습니다.",
+  },
+  {
+    id: 45,
+    description:
+      "그 결과 애플리케이션 레이어와 인터페이스 레이어에 각각 DTO를 적용하여 관심사를 분리하고, 타입 안정성과 기타 이점등을 챙겼습니다.",
+  },
+  {
+    id: 46,
+    description:
+      "추가적인 이점으로 직렬화와 역직렬화 과정을 DTO를 통해 해결한 점입니다.",
+  },
+  {
+    id: 47,
+    description:
+      "특히 직렬화 과정을 엔티티에 의존하지 않고 각 계층 간 DTO를 통해 계층마다 필요한 데이터를 정확하게 전달하여 최종적으로 JSON형태로 컨트롤러에서 응답합니다.",
+  },
+  {
+    id: 48,
+    description:
+      "모든 과정은 블로그에 상세히 작성하였으니 다음 링크에서 확인 가능합니다.",
+  },
+  {
+    id: 49,
+    description: (
+      <a
+        href="https://kubrickcode.tistory.com/entry/11-Pointodo-%EC%A7%81%EB%A0%AC%ED%99%94%EC%99%80-%EC%97%AD%EC%A7%81%EB%A0%AC%ED%99%94-DTO"
+        target="_blank"
+        rel="noreferrer"
+        className="text-blue-500"
+      >
+        {">"}
+        {">"} (11) Pointodo 직렬화와 역직렬화 DTO
       </a>
     ),
   },
